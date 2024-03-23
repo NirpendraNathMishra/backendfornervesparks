@@ -1,15 +1,17 @@
 {
   "name": "backendfornervesparks",
   "version": "0.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon --experimental-modules ./bin/www.mjs"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "morgan": "~1.9.1",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "uuid": "^9.0.1"
   }
 }
